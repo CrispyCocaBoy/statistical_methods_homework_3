@@ -7,7 +7,7 @@ editor: visual
 # Homework 3
 
 ```{python}
-
+print("ok")
 ```
 
 #  
