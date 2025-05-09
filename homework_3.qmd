@@ -1,0 +1,13 @@
+---
+title: "homework_w"
+format: pdf
+editor: visual
+---
+
+# Homework 3
+
+```{python}
+
+```
+
+#  
