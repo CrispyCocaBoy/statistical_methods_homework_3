@@ -8,7 +8,7 @@ We begin by splitting the data into training and test sets using scikit-learn, a
 
 
 ```python
-X = data.drop(columns=["y", "sampleID"])
+X = data.drop(columns=["y", "sampleID"]) # Remove sample id
 y = data["y"]  
  
 from sklearn.model_selection import train_test_split  
@@ -21,6 +21,16 @@ We examine the distribution of the target variable `y` to verify whether the dat
 This balance suggests that we can safely use standard performance metrics such as accuracy, ROC AUC, precision, and recall without applying class weighting or resampling techniques.
 
 We will train three types of Support Vector Classifiers, each using a different kernel function (linear, polynomial, and RBF). In the final part of the analysis, we will repeat the same procedure on a corrected version of the dataset, applying a common preprocessing technique used in genetic studies.
+
+The packages used to compute the analysis are implemented as
+
+```python
+import numpy as np  
+from matplotlib import pyplot as plt  # import subplots, cm  
+import sklearn.model_selection as skm  
+import pandas as pd  
+import seaborn as sns
+```
 
 ## Dataset 
 In this section we will use the dataset without any type of correction
